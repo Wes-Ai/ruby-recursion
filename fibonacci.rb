@@ -8,7 +8,16 @@ def fibs(n)
     return fib_sequence
 end
 
+# result = fibs(8)
+# print result
 
 
-result = fibs(8)
-print result
+
+def fibs_rec(n, fib_sequence = [0, 1])
+    if (n <= 2)
+        return fib_sequence 
+    end
+end
+  
+result_rec = fibs_rec(2)
+print result_rec
